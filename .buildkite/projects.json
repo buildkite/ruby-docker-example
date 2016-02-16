@@ -1,0 +1,11 @@
+{
+  "name": "Ruby Docker Example",
+  "repository": "https://github.com/buildkite/ruby-docker-example.git",
+  "steps": [
+    {
+      "type": "script",
+      "name": ":pipeline:",
+      "command": "buildkite-agent pipeline upload"
+    }
+  ]
+}

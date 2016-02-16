@@ -1,0 +1,5 @@
+steps:
+  - name: ":ruby:"
+    command: "rspec --color specs"
+    env:
+      BUILDKITE_DOCKER_COMPOSE_CONTAINER: "app"
