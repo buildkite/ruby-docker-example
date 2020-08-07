@@ -11,27 +11,44 @@ To run this locally:
 ```
 $ docker-compose run app rspec --color specs
 Building app
-Step 1 : FROM ruby:2.1
- ---> e4920b48871c
-Step 2 : RUN mkdir /app
+Step 1/6 : FROM ruby:2.7
+ ---> fb53c5f433da
+Step 2/6 : RUN mkdir /app
  ---> Using cache
- ---> 41174643e51e
-Step 3 : WORKDIR /app
+ ---> 0d79a968fbbb
+Step 3/6 : WORKDIR /app
  ---> Using cache
- ---> e090d3fb63e6
-Step 4 : ADD Gemfile Gemfile.lock /app/
- ---> Using cache
- ---> 6e1831999c8c
-Step 5 : RUN bundle install -j 8
- ---> Using cache
- ---> 6995ab4574ca
-Step 6 : ADD . /app
- ---> cc8df46d2d0e
-Removing intermediate container 6ec9b2c13ff3
-Successfully built cc8df46d2d0e
+ ---> 20faa284ae78
+Step 4/6 : ADD Gemfile Gemfile.lock /app/
+ ---> 050ec65cce16
+Step 5/6 : RUN bundle install -j 8
+ ---> Running in 3102f1bf36cd
+Fetching gem metadata from https://rubygems.org/..........
+Using bundler 2.1.2
+Fetching rspec-support 3.4.1
+Fetching diff-lcs 1.2.5
+Installing diff-lcs 1.2.5
+Installing rspec-support 3.4.1
+Fetching rspec-expectations 3.4.0
+Fetching rspec-mocks 3.4.1
+Fetching rspec-core 3.4.2
+Installing rspec-core 3.4.2
+Installing rspec-expectations 3.4.0
+Installing rspec-mocks 3.4.1
+Fetching rspec 3.4.0
+Installing rspec 3.4.0
+Bundle complete! 1 Gemfile dependency, 7 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+Removing intermediate container 3102f1bf36cd
+ ---> 417ad2370e72
+Step 6/6 : ADD . /app
+ ---> 593b562046e7
+Successfully built 593b562046e7
+Successfully tagged ruby-docker-example_app:latest
+WARNING: Image for service app was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
 .
 
-Finished in 0.00101 seconds (files took 0.05301 seconds to load)
+Finished in 0.00044 seconds (files took 0.05898 seconds to load)
 1 example, 0 failures
 ```
 
