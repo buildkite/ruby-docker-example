@@ -2,5 +2,5 @@ steps:
   - name: ":rspec:"
     command: "rspec --color specs"
     plugins:
-      docker-compose#v3.6.0:
+      docker-compose#v3.7.0:
         run: app
