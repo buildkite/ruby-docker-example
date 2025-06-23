@@ -1,9 +1,13 @@
-# Buildkite Ruby Docker Example
+# Buildkite Ruby Docker Pipeline Example
 
+[![Build status](https://badge.buildkite.com/aab023f2f33ab06766ed6236bc40caf0df1d9448e4f590d0ee.svg?branch=main)](https://buildkite.com/buildkite/ruby-docker-example)
 [![Add to Buildkite](https://buildkite.com/button.svg)](https://buildkite.com/new)
 
 This repository is an example on how to test a [Ruby](https://www.ruby-lang.org/en/) project using [Buildkite](https://buildkite.com/) and [Docker](https://docker.com/). It uses the standard [Ruby Docker image](https://hub.docker.com/_/ruby/) and [Buildkite’s Docker-based Builds](https://buildkite.com/docs/guides/docker-containerized-builds).
 
+See the full [Getting Started Guide](https://buildkite.com/docs/guides/getting-started) for step-by-step instructions on how to get this running, or [Add to Buildkite](https://buildkite.com/new) to try it yourself.
+
+<a href="https://buildkite.com/buildkite/ruby-docker-example/builds?branch=main"><img width="1491" alt="Screenshot of Buildkite Ruby Docker example pipeline" src=".buildkite/screenshot.png" /></a>
 ## Running locally
 
 To run this locally:
