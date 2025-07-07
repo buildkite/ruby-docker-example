@@ -4,7 +4,6 @@ emoji: ":ruby:"
 color: "#FDF5F5"
 languages:
   - "Ruby"
-  - "YAML"
   - "Docker"
 steps:
   - command: "buildkite-agent pipeline upload"
