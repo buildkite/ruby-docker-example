@@ -4,3 +4,4 @@ steps:
     plugins:
       docker-compose#v5.2.0:
         run: app
+        tty: true
